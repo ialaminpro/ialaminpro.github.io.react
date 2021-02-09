@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "mulish-Bold";
+  src: url("../fonts/mulish-Bold.ttf");
+}
+@font-face {
+  font-family: "mulish-Semibold";
+  src: url("../fonts/Mulish-SemiBold.ttf");
+}
+@font-face {
+  font-family: "mulish-Medium";
+  src: url("../fonts/Mulish-Medium.ttf");
+}
+@font-face {
+  font-family: "mulish-Regular";
+  src: url("../fonts/Mulish-Regular.ttf");
+}
+
+/*# sourceMappingURL=fonts.css.map */
