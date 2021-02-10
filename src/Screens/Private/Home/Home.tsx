@@ -3,6 +3,10 @@ import '../../../Static/Styles/style.css';
 import '../../../Static/Styles/plugins.css';
 import '../../../Static/Styles/color.css';
 import FontAwesome from "react-fontawesome";
+import bg1 from '../../../Static/images/bg/10.jpg';
+import bg2 from '../../../Static/images/bg/7.jpg';
+import bg3 from '../../../Static/images/bg/8.jpg';
+
 
 
 class Home extends React.Component<any, any> {
@@ -75,19 +79,19 @@ class Home extends React.Component<any, any> {
                                     <div className="swiper-wrapper" >
                                         {/* swiper-slide*/}
                                         <div className="swiper-slide">
-                                            <div className="bg"  data-bg="images/bg/10.jpg" data-swiper-parallax="20%"></div>
+                                            <div className="bg"  data-bg={bg1} data-swiper-parallax="20%"></div>
                                             <div className="overlay"></div>
                                         </div>
                                         {/* swiper-slide end*/}
                                         {/* swiper-slide*/}
                                         <div className="swiper-slide">
-                                            <div className="bg"  data-bg="images/bg/7.jpg" data-swiper-parallax="20%"></div>
+                                            <div className="bg"  data-bg={bg2} data-swiper-parallax="20%"></div>
                                             <div className="overlay"></div>
                                         </div>
                                         {/* swiper-slide end*/}
                                         {/* swiper-slide*/}
                                         <div className="swiper-slide">
-                                            <div className="bg"  data-bg="images/bg/8.jpg" data-swiper-parallax="20%"></div>
+                                            <div className="bg"  data-bg={bg3} data-swiper-parallax="20%"></div>
                                             <div className="overlay"></div>
                                         </div>
                                         {/* swiper-slide end*/}
