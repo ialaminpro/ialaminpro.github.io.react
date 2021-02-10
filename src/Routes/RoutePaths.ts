@@ -1,7 +1,6 @@
 const RoutePaths = {
     GLOBAL: {
         ROOT: '/',
-        REACT_SPLASH: '/react-splash',
     },
 
     PUBLIC: {

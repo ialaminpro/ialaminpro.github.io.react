@@ -2,93 +2,24 @@ import React from 'react';
 import '../../../Static/Styles/style.css';
 import '../../../Static/Styles/plugins.css';
 import '../../../Static/Styles/color.css';
-// import '../../../Static/Fonts/fonts/fa-brands-400.woff2';
-// import '../../../Static/Fonts/fonts/fa-light-300.woff2';
-// import '../../../Static/Fonts/fonts/fa-regular-400.woff2';
-// import '../../../Static/Fonts/fonts/fa-solid-900.woff2';
+import FontAwesome from "react-fontawesome";
 
-const Welcome = () => {
-    return (
-        <div>
-            {/* loader   */}
-        <div className="loader">
-            <div className="loading-text-container "><span className="loading-text">Load<strong>ing</strong></span> <span className="loader_count">0</span></div>
-            <div className="loader-anim"></div>
-            <div className="loader-anim2 color-bg"></div>
-        </div>
-        {/* loader  end*/}
-        {/* main start  */}
-        <div id="main">
-            {/* header*/}
-            <header className="main-header">
-                {/* logo  */}
-                <a href="index.html" className="ajax logo-holder"><img src="images/logo.png" alt=""/></a>
-                {/* logo end */}
-                {/* nav-button-wrap*/}
-                <div className="nav-button but-hol">
-                    <span  className="ncs"></span>
-                    <span className="nos"></span>
-                    <span className="nbs"></span>
-                    <div className="menu-button-text">Menu</div>
-                </div>
-                {/* nav-button-wrap end*/}
-                {/* header-contacts*/}
-                <div className="header-contacts">
-                    <ul>
-                        <li><span>01. Call </span> <a href="tel:+88(017)30716580">+88(017)30716580</a></li>
-                        <li><span>02. Write </span> <a href="mailto:info@al-amin.pro">info@al-amin.pro</a></li>
-                    </ul>
-                    <a href="contacts.html" className="ajax contacts-btn">Get in touch</a>
-                </div>
-                {/* header-contacts end*/}
-            </header>
-            {/* header end*/}
-            {/* left-header*/}
-            <aside className="left-header">
-                <span className="lh_dec color-bg"></span>
-                <div className="left-header_social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/ialaminpro" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.twitter.com/ialaminpro" target="_blank"><i className="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/ialaminpro" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://stackoverflow.com/users/4603858/al-amin" target="_blank"><i className="fab fa-stack-overflow"></i></a></li>
-                    </ul>
-                </div>
-            </aside>
-            {/* left-header end*/}
-            {/* share button*/}
-            <div className="share-btn showshare color-bg"><span>Share <i className="fal fa-plus"></i></span></div>
-            {/* share button end*/}
-            {/* right header*/}
-            <div className="hc_dec_color">
-                <div className="page-subtitle"><span></span></div>
-            </div>
-            {/* right header end*/}
-            {/* wrapper  */}
-            <div id="wrapper">
-                {/* navigation menu*/}
-                <div className="nav-holder">
-                    <div className="nav-holder-wrap but-hol">
-                        <div className="nav-container fl-wrap">
-                            {/* nav */}
-                            <nav className="nav-inner" id="menu">
-                                <ul>
-                                    <li><a href="index.html" className="ajax">Home</a></li>
-                                    <li><a href="about.html" className="ajax">About</a></li>
-                                    <li><a href="portfolio4.html" className="ajax">Portfolio</a></li>
-                                    <li><a href="contacts.html" className="ajax">Contacts</a></li>
-                                    <li><a href="blog.html" className="ajax">Blog</a></li>
-                                </ul>
-                            </nav>
-                            {/* nav end*/}
-                        </div>
-                        <div className="nav-footer"><span>&#169; Al Amin 2021  /  All rights reserved. </span></div>
-                        <div className="nav-holder-wrap_line"></div>
-                        <div className="nav-holder-wrap_dec"></div>
-                    </div>
-                </div>
-                <div className="nav-overlay"></div>
-                {/* navigation menu end  */}
+
+class Home extends React.Component<any, any> {
+    public constructor(props: any) {
+        super(props);
+    }
+
+    public componentDidMount(): void {
+  
+        //Scroll to the top of the document
+        window.scrollTo(0, 0);
+        document.title = "Home";
+    }
+
+    public render(): any {
+        return (
+            <React.Fragment>
                 {/* content*/}
                 <div className="content full-height" data-pagetitle="Home">
                     <div className="fl-wrap full-height hero-conatiner">
@@ -103,7 +34,7 @@ const Welcome = () => {
                                             {/* swiper-slide*/}
                                             <div className="swiper-slide">
                                                 <div className="half-hero-wrap">
-                                                    <div className="hhw_header">Welcome to my Website</div>
+                                                    <div className="hhw_header">Home to my Website</div>
                                                     <h1>Sandy Plegas  - <br></br><span> Web  developer</span> and designer<br></br>   form <span>USA</span></h1>
                                                     <h4>Praesent eu massa vel diam laoreet elementum ac sed felis. Donec suscipit ultricies risus sed mollis. Donec volutpat porta risus posuere imperdiet. </h4>
                                                     <div className="clearfix"></div>
@@ -183,12 +114,12 @@ const Welcome = () => {
                                 <div className="total"></div>
                             </div>
                             <div className="hero-slider_control-wrap">
-                                <div className="hsc hsc-prev"><span><i className="fal fa-angle-left"></i></span> </div>
-                                <div className="hsc hsc-next"><span><i className="fal fa-angle-right"></i></span></div>
+                                <div className="hsc hsc-prev"><span><FontAwesome tag={"i"} name={"angle-left"}/></span> </div>
+                                <div className="hsc hsc-next"><span><FontAwesome tag={"i"} name={"angle-right"}/></span></div>
                             </div>
                             {/* slider-controls end*/}
-                            <a href="about.html" className="ajax start-btn"><span> Start explore <i className="fal fa-long-arrow-right"></i></span></a>
-                            <div className="play-pause_slider hsc_pp auto_actslider"><i className="fas fa-play"></i></div>
+                            <a href="about.html" className="ajax start-btn"><span> Start explore <FontAwesome tag={"i"} name={"long-arrow-right"}/></span></a>
+                            <div className="play-pause_slider hsc_pp auto_actslider"><FontAwesome tag={"i"} name={"fa-play"}/></div>
                         </div>
                         {/* hero-container end*/}
                         <div className="hero-decor-numb"><span>40.7143528  </span><span>-74.0059731 </span> <a href="https://www.google.com.ua/maps/" target="_blank" className="hero-decor-numb-tooltip">Based In NewYork</a></div>
@@ -199,28 +130,13 @@ const Welcome = () => {
                                     <div className="scroller"></div>
                                 </div>
                             </div>
-                            <i className="far fa-angle-down"></i>
+                            <FontAwesome tag={"i"} name={"angle-down"}/>
                         </div>
                     </div>
                 </div>
                 {/* content end */}
-                {/* share-wrapper*/}
-                <div className="share-wrapper">
-                    <div className="close-share-btn"><i className="fal fa-long-arrow-left"></i></div>
-                    <div className="share-container fl-wrap  isShare"></div>
-                </div>
-                {/* share-wrapper  end */}
-            </div>
-            {/* wrapper end */}
-            {/* cursor*/}
-            <div className="element">
-                <div className="element-item"></div>
-            </div>
-            {/* cursor end*/}
-        </div>
-        {/* Main end */}
-        </div>
+            </React.Fragment>        
     );
-};
-
-export default Welcome;
+    };
+}
+export default Home;
